@@ -71,7 +71,7 @@ void grpprint(struct listnode **grp, int vertex)
         printf("\n");
     }
 }
-void calcpagerank(struct listnode **grp, int vertex)
+void calcpagerank(struct listnode **grp, int vertex, double ep)
 {
     int *linkcount = (int *)calloc(vertex, sizeof(int));
     for (int i = 0; i < vertex; i++)
@@ -195,5 +195,8 @@ int main()
         }
         grpprint(grp, vertex);
     }
-    calcpagerank(grp, vertex);
+    printf("Enter the value of epsilon\n");
+    double ep=0;
+    scanf("%f",&ep);
+    calcpagerank(grp, vertex,ep);
 }
