@@ -61,15 +61,15 @@ int main(){
 	
 	// Keep track of the execution time
 	clock_t begin, end;
-	double time_spent;
+	long double time_spent;
 	begin = clock();
 
     pagerank(G);
 
     // Stop the timer and compute the time spent
 	end = clock();
-	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-	printf("\n\t\tEXECUTION TIME OF PAGERANK ALGORITHM: %f seconds.\n", time_spent);
+	time_spent = (long double)(end - begin) / CLOCKS_PER_SEC;
+	printf("\n\tEXECUTION TIME OF PAGERANK ALGORITHM: %E seconds.\n", time_spent);
 
 
 return 0;
