@@ -37,10 +37,8 @@ struct graph{
 void createGraph(int n);
 void directedEdge(struct graph* G, int a, int b);
 void pagerank(struct graph*G);
-void printPageRank(struct graph *G);
 void getfromfile();
 void sortPR(struct graph *G);
-
 
 
 #define epsilon 0.000001
@@ -52,55 +50,26 @@ int n;
 
 int main(){
 
-    // Keep track of the execution time
-	clock_t begin, end;
-	double time_spent;
-	begin = clock();
-
     getfromfile();
-    /*int n;
-    printf("Enter the number of vertices in the graph : ");
-    scanf("%d",&n);
-    if(n<1){printf("InvalidInput\n"); return 0;}
-
-    printf("Your vertices are numbered ");
-    for(int i =0; i<n;i++){
-        if(i==n-1){printf("%d\n",i);}
-        else{printf("%d, " ,i);}
-    }
-
-
+    
     createGraph(n);
     int a,b;
-    */
-
-    /*printf("Enter edges of you Directed graph one by one. Once done, press '-1 -1'\n");     //Quit case is -1 -1
-
-    while(1){
-
-        scanf("%d", &a);
-        scanf("%d",&b);
-        if(a==-1 & b==-1){
-                break;
-        }
-        if(a<0 || b<0 || a>G->totalv -1 || b>G->totalv -1){printf("invalid Input\n");}   // vertex is greater than 0 but less than G->totalv
-        else{
-                directedEdge(G,a,b);
-        }
-
-    }
-    */
+    
     printf("----------------------------------------------------------------------------\n");
 
     printf("\t\t\tENTERED GRAPH\n\n\t\tTotal Number of Vertices = %d\n\t\tTotal Number of Edges = %d\n",G->totalv,edges);
-
+	
+	// Keep track of the execution time
+	clock_t begin, end;
+	double time_spent;
+	begin = clock();
 
     pagerank(G);
 
     // Stop the timer and compute the time spent
 	end = clock();
 	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-	printf("\n\t\tTIME SPENT: %f seconds.\n", time_spent);
+	printf("\n\t\tEXECUTION TIME OF PAGERANK ALGORITHM: %f seconds.\n", time_spent);
 
 
 return 0;
