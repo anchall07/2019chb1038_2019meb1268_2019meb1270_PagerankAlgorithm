@@ -84,7 +84,7 @@ void getfromfile()
         fprintf(stderr,"Cannot open file, error\n");
         exit(0);
     }
-    long int from_node, to_node;
+    int from_node, to_node;
     fscanf(f," %d", &n);
     printf("\nNumber of nodes: %d", n);
     createGraph(n);
