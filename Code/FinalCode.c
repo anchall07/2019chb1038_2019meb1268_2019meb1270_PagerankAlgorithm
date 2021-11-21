@@ -81,8 +81,14 @@ return 0;
 
 void getfromfile()
 {
-
-    FILE *f= fopen("./file2.txt","r");
+    //taking filename input 	
+    FILE *f;
+    char filename[16];
+    printf("Enter name of file containing graph data.\n");
+    fgets(filename, 16, stdin);
+    filename[strcspn(filename, "\n")] = '\0';
+    //opening file
+    f = fopen(filename, "r");
     if (f==NULL)
     {
         fprintf(stderr,"Cannot open file, error\n");
