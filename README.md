@@ -1,9 +1,10 @@
 # CS201_PageRankAlgo_Project
 In this project we analyse and implement the page rank algorithm as introduced by Lawrence Page and Sergey Brin that computes ranking scores for the nodes using the network created by the incoming edges in the graph. Thus it is intended for directed graphs, although undirected graphs can be treated as well by converting them into directed graphs.
 
-FinalCode.c file presen tin the Code folder of this repository contains list implementation of page rank algorithm in C language. Once the program is run, it prompts the user for a text file name containing the graph data. Once entered, it calculates the page ranks of all the vertices and displays them in descending order.
+FinalCode.c file present in the Code folder of this repository contains list implementation of page rank algorithm in C language. Once the program is run, it prompts the user for a text file name containing the graph data. Once entered, it calculates the page ranks of all the vertices and displays them in descending order.
 
 PROGRAM FILE: FinalCode.c
+
 INPUT: Name of text file containing graph data. The name of text file along with'.txt' extension should not be more than 15 characters. For example,  dataset01.txt is a valid input as it is a text file and total number of characters is 13.
 
 OUTPUT: The output will contain the following,
