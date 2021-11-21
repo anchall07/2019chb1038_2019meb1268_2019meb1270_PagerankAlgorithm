@@ -3,7 +3,7 @@ In this project we analysed and implemented the page rank algorithm as introduce
 
 FinalCode.c file present in the Code folder of this repository contains list implementation of page rank algorithm in C language. Once the program is compiled and run, it prompts the user for a text file name containing the directed graph data. Once entered, it calculates the page ranks of all the vertices and displays them in descending order.
 
-PROGRAM FILE: FinalCode.c
+PROGRAM FILE: FinalCode.c (Present in Code folder of this repository) Compile and Run
 
 INPUT: Name of text file containing directed graph data. The name of text file along with'.txt' extension should not be more than 15 characters. For example,  dataset01.txt is a valid input as it is a text file and total number of characters is 13.
 
