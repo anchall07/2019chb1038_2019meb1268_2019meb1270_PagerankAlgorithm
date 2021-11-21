@@ -211,7 +211,7 @@ void pagerank(struct graph*G){
         int flag =0;
         double change;
         for(int m=0; m<G->totalv;m++){
-                change = (G->array[m].oldPR - G->array[m].newPR)/(double)(G->array[m].oldPR);
+                change = (double)(G->array[m].oldPR - G->array[m].newPR);
                 if(change<0){
                     change = change*-1;
                 }
