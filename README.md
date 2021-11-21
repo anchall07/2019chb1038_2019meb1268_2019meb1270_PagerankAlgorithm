@@ -5,7 +5,7 @@ FinalCode.c file present in the Code folder of this repository contains list imp
 
 PROGRAM FILE: FinalCode.c (Present in Code folder of this repository) Compile and Run
 
-INPUT: Name of text file containing directed graph data. The name of text file along with'.txt' extension should not be more than 15 characters. For example,  dataset01.txt is a valid input as it is a text file and total number of characters is 13.
+INPUT: Copy the input file from the Dataset folder to the Code folder. Input the name of text file containing directed graph data. The name of text file along with'.txt' extension should not be more than 15 characters. For example,  dataset01.txt is a valid input as it is a text file and total number of characters is 13.
 
 OUTPUT: The output will contain the following,
   1. Total Number of Vertices in the directed graph
