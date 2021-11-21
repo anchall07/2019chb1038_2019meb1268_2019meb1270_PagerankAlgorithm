@@ -19,6 +19,4 @@ OUTPUT: The output will contain the following,
   First line should contain the total number of vertices in the graph.The following lines contain data about the directed edges of the graph.
   From the second line onwards, the first entry in each line should be the source vertex number of the directed edge followed by the destination vertex number seperated by a 'space'. 
 
-UpdatedPAgeRankAlgo.c contains the updated pagerank algorithm. Each vertex represents a webpage and each directed edge represents an outgoing link. The input is taken manually. Insertion sort is used for sorting the webpages according to calculated pagerank. Finally, the webpages are listed in order of decreasing pagerank.
-
-FinalCode.c takes input from a text file. Datasets folder contains some text files on which the pagerank algorithm has been implemented.
+Some sample text files have been provided in the Dataset folder of this repository. The outputs to those datasets can be seen in the Output folder.
