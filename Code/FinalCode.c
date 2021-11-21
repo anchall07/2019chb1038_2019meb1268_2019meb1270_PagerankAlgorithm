@@ -108,7 +108,7 @@ void getfromfile()
 
 	    //printf("\nNode 1: %d, Node 2: %d\n",from_node,to_node);       // Debugging with using printf() statement
 
-	    if(from_node!=to_node && from_node<n && to_node<n){
+	    if(from_node!=to_node && from_node<n && to_node<n && from_node>=0 && to_node>=0){
             directedEdge(G,from_node,to_node);
         }
 	}
